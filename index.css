@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141d2b;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.container {
+  padding: 2rem 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.center {
+  text-align: center;
+  letter-spacing: 1px;
+}
+.reset-btn-container {
+  display: flex;
+  justify-content: center;
+}
+.reset-btn {
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.cell-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+.cell {
+  background-color: green;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 80px;
+  height: 50px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.col {
+  display: grid;
+}
+.col-1,
+.col-3 {
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.disable-cell-click {
+  pointer-events: none;
+}
+.red-bg {
+  color: red;
+}
+.blue-bg {
+  color: blue;
+}
+#result {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 560px) {
+  .row {
+    width: 100%;
+  }
+  .col {
+    width: 33%;
+    float: left;
+  }
+}

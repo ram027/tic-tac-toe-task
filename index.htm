@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col col-1">
+        <div id="player-x" class="red-bg">Player X</div>
+      </div>
+      <div class="col">
+        <div class="container">
+          <h2 class="center">TIC TAC TOE</h2>
+          <h4 class="center">Game starts by just tap on box</h4>
+          <p class="center">First player starts as Player X</p>
+          <p class="center">And</p>
+          <p class="center">Second player as Player O</p>
+          <div class="cell-container">
+            <div
+              class="cell"
+              id="0"
+              onclick="handleCellClick(0); checkWin();"
+            ></div>
+            <div
+              class="cell"
+              id="1"
+              onclick="handleCellClick(1); checkWin();"
+            ></div>
+            <div
+              class="cell"
+              id="2"
+              onclick="handleCellClick(2); checkWin();"
+            ></div>
+            <div
+              class="cell"
+              id="3"
+              onclick="handleCellClick(3); checkWin();"
+            ></div>
+            <div
+              class="cell"
+              id="4"
+              onclick="handleCellClick(4); checkWin();"
+            ></div>
+            <div
+              class="cell"
+              id="5"
+              onclick="handleCellClick(5); checkWin();"
+            ></div>
+            <div
+              class="cell"
+              id="6"
+              onclick="handleCellClick(6); checkWin();"
+            ></div>
+            <div
+              class="cell"
+              id="7"
+              onclick="handleCellClick(7); checkWin();"
+            ></div>
+            <div
+              class="cell"
+              id="8"
+              onclick="handleCellClick(8); checkWin();"
+            ></div>
+          </div>
+          <div id="result"></div>
+          <div class="reset-btn-container">
+            <button class="reset-btn" onclick="handleReset();">Reset</button>
+          </div>
+        </div>
+      </div>
+      <div class="col col-3">
+        <div id="player-y">Player O</div>
+      </div>
+    </div>
+  </body>
+</html>
